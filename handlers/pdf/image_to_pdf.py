@@ -41,7 +41,7 @@ async def begin_image_upload(
     await state.update_data(images=[], pdf_mode=pdf_mode)
     await state.set_state(ImageToPDF.waiting_for_images)
     await message.answer(
-        f"{label} mode selected. Send one or more images, then press Generate PDF.",
+        f"{label} mode selected. Send one or more images, then press Generate PDF.\n\nFor maintain page serial, Send Image One By One For serially.",
         reply_markup=image_menu,
     )
 
