@@ -28,7 +28,6 @@ async def main():
             BotCommand(command="about", description="About this bot"),
         ]
     )
-    await dp.start_polling(bot)
 
 
 if __name__ == "__main__":
